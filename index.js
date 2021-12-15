@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
   const current_date = new Date();
 
   const heartbeat_rate = randomNumber(50, 200);
-  const temperature = randomNumber(-20, 30);
+  const temperature = randomNumber(0, 40);
   const humidity = randomNumber(0, 100);
 
   let diff = Math.round((current_date - startTime) / 1000);
